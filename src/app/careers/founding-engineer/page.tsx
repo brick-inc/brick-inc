@@ -2,8 +2,8 @@ import JobDescription from "../../components/JobDescription";
 
 export default function FullStackEngineer() {
   const jobData = {
-    title: "Full Stack Engineer",
-    slug: "full-stack-engineer",
+    title: "Founding Engineer",
+    slug: "founding-engineer",
     badges: [
       { label: "Location", value: "Remote" },
       { label: "Team", value: "Engineering" },
@@ -16,7 +16,7 @@ export default function FullStackEngineer() {
       },
       {
         title: "The Role",
-        content: "We're looking for a Full Stack Engineer who can bridge the gap between frontend and backend development. You'll be responsible for building complete features from database to user interface, working on all layers of our application stack. This role is perfect for developers who enjoy variety and want to have a broad impact on our products."
+        content: "We're looking for a Founding Engineer who can bridge the gap between frontend and backend development. You'll be responsible for building complete features from database to user interface, working on all layers of our application stack. This role is perfect for developers who enjoy variety and want to have a broad impact on our products."
       },
       {
         title: "What You'll Do",

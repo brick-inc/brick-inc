@@ -23,9 +23,9 @@ export default function Home() {
 
             <div className="mt-4 border-t-2 border-gray-200 pt-4">
               <h2 className="font-tinos text-2xl mb-4">Careers</h2>
-              <CareerCard title="Frontend Engineer" linkUrl="/careers/frontend-engineer" location="Remote" />
-              <CareerCard title="Backend Engineer" linkUrl="/careers/backend-engineer" location="Remote" />
-              <CareerCard title="Full Stack Engineer" linkUrl="/careers/full-stack-engineer" location="Remote" />
+              <CareerCard title="Marketing Manager" linkUrl="/careers/marketing-manager" location="Remote" />
+              <CareerCard title="Social Media Content Creator" linkUrl="/careers/social-media-content-creator" location="Remote" />
+              <CareerCard title="Founding Engineer" linkUrl="/careers/founding-engineer" location="Remote" />
             </div>
           </div>
 
