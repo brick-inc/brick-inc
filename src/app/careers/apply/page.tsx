@@ -5,8 +5,9 @@ import Image from "next/image"
 import Link from "next/link"
 import CareerForm from "../../components/CareerForm"
 import Footer from "../../components/Footer"
+import { Suspense } from 'react'
 
-export default function ApplyPage() {
+function ApplyPageContent() {
   const searchParams = useSearchParams()
   const position = searchParams.get('position')
   
@@ -40,12 +41,12 @@ export default function ApplyPage() {
           </h1>
           
           <p className="text-muted-foreground font-sans mb-6">
-            We're excited to learn more about you. Please fill out the form below to apply.
+            We&apos;re excited to learn more about you. Please fill out the form below to apply.
           </p>
         </div>
         
         <div className="bg-card p-6 rounded-lg shadow-sm">
-          <CareerForm />
+          <CareerForm position={position || undefined} />
         </div>
       </div>
       
@@ -53,5 +54,19 @@ export default function ApplyPage() {
         <Footer />
       </div>
     </div>
+  )
+}
+
+export default function ApplyPage() {
+  return (
+    <Suspense fallback={
+      <div className="w-full h-screen flex items-center justify-center">
+        <div className="text-center">
+          <p className="text-xl font-sans">Loading application form...</p>
+        </div>
+      </div>
+    }>
+      <ApplyPageContent />
+    </Suspense>
   )
 } 

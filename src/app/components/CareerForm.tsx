@@ -202,7 +202,7 @@ export default function CareerForm({ position = "frontend-engineer" }: CareerFor
                 <FormLabel className="font-sans">Why would you like to join us?</FormLabel>
                 <FormControl>
                   <Textarea 
-                    placeholder="Tell us why you're interested in this position and what makes you a good fit..."
+                    placeholder="Tell us why you&apos;re interested in this position and what makes you a good fit..."
                     className="min-h-[150px] font-sans"
                     {...field} 
                   />
