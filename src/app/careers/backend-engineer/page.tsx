@@ -5,7 +5,7 @@ export default function BackendEngineer() {
     title: "Backend Engineer",
     slug: "backend-engineer",
     badges: [
-      { label: "Location", value: "Remote or NYC-based" },
+      { label: "Location", value: "Remote" },
       { label: "Team", value: "Engineering" },
       { label: "Type", value: "Full-Time" }
     ],

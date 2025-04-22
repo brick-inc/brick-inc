@@ -1,6 +1,7 @@
 'use client'
 
 import Image from "next/image";
+import Link from "next/link";
 import CareerCard from "./components/CareerCard";
 import Footer from "./components/Footer";
 export default function Home() {
@@ -8,8 +9,8 @@ export default function Home() {
     <>
       <div className="w-full h-screen flex">
         <div className="mx-auto flex w-full sm:w-2/3 flex-col justify-center items-center">
-          <div className="flex w-[600px]  md:p-0 flex-col">
-            <div className="flex items-center mx-auto gap-2 pt-52">
+          <div className="flex w-[300px] sm:w-[600px] md:p-0 flex-col mt-20">
+            <div className="flex items-center mx-auto gap-2 pt-52 p-3">
               <Image src="/Brick-Logo.png" alt="Brick Logo" width={50} height={50} />
               <h1 className="text-5xl font-sans font-bold">Brick</h1>
             </div>
@@ -31,7 +32,7 @@ export default function Home() {
             </div>
 
             <div className="mt-4 border-t-2 border-gray-200 pt-4">
-              <h2 className="font-tinos text-2xl mb-4">Careers</h2>
+              <Link href="/careers" className="font-tinos text-2xl mb-4 inline-block hover:text-gray-500">Careers</Link>
               <CareerCard title="Frontend Engineer" linkUrl="/careers/frontend-engineer" location="Remote" />
               <CareerCard title="Backend Engineer" linkUrl="/careers/backend-engineer" location="Remote" />
               <CareerCard title="Full Stack Engineer" linkUrl="/careers/full-stack-engineer" location="Remote" />

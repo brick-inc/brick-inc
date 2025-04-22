@@ -5,7 +5,7 @@ export default function FrontendEngineer() {
     title: "Frontend Engineer",
     slug: "frontend-engineer",
     badges: [
-      { label: "Location", value: "Remote or NYC-based" },
+      { label: "Location", value: "Remote" },
       { label: "Team", value: "Engineering" },
       { label: "Type", value: "Full-Time" }
     ],

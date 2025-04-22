@@ -9,11 +9,11 @@ export default function Home() {
     <>
       <div className="w-full h-screen flex">
         <div className="mx-auto flex w-full sm:w-2/3 flex-col justify-center items-center">
-          <div className="flex w-[600px] md:p-0 flex-col">
-            <div className="flex items-center mx-auto gap-2 pt-12">
+          <div className="flex w-[300px] sm:w-[600px] md:p-0 flex-col">
+            <a href="/" className="flex items-center mx-auto gap-2 pt-12">
               <Image src="/Brick-Logo.png" alt="Brick Logo" width={50} height={50} />
               <h1 className="text-5xl font-sans font-bold">Careers</h1>
-            </div>
+            </a>
             <div className="font-tinos">
               <h2 className="text-3xl mt-20">Working at Brick</h2>
               <div className="text-lg mt-4">
